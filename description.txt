@@ -1,0 +1,37 @@
+Project Title: Procedural Maze Generation and Intelligent Pathfinding System
+
+Project Description:
+The Procedural Maze Generation and Intelligent Pathfinding System is an 8086 Assembly-based application designed to generate, navigate, and automatically solve maze structures using algorithmic techniques. The system represents the maze using an array and applies a pseudo-random generation method to create different maze layouts. Users can manually navigate through the generated maze, while pathfinding algorithms can automatically search for a route from the starting point to the destination. The project demonstrates array manipulation, stack-based searching, keyboard input, random number generation, pathfinding algorithms, and low-level memory management.
+
+Features Description:
+1. Procedural Maze Generation
+
+The system generates a maze dynamically in memory instead of using a fixed maze layout. Each cell is represented using an array, where different values represent walls, paths, the starting position, and the destination. A pseudo-random process is used to produce different maze layouts.
+
+2. Random Maze Generation
+
+This feature generates different maze structures each time the user requests a new maze by using a pseudo-random number generation technique. The generated values determine whether specific cells become walls or accessible paths while maintaining a valid starting and ending position.
+
+3. Interactive Maze Navigation
+
+The system allows the user to control a player inside the generated maze using keyboard commands such as W, A, S, and D. The player's current position is stored in memory and updated after every valid movement.
+
+4. Wall and Boundary Collision Detection
+
+Before moving the player, the system checks whether the destination cell is inside the maze and whether it contains a wall. If the movement would result in crossing a wall or leaving the maze boundaries, the movement is rejected and an appropriate message is displayed.
+
+5. Automatic Maze Solving Using DFS
+
+The system automatically searches for a path from the starting point to the destination using the Depth-First Search (DFS) algorithm. A stack is used to store unexplored maze positions, allowing the system to explore possible routes until it reaches the destination or determines that no valid path exists.
+
+6. Shortest Path Detection
+
+The system determines an efficient or shortest route between the starting point and destination using a pathfinding algorithm. The number of cells or movements required to reach the destination is calculated and displayed to the user.
+
+7. Solution Path Visualization
+
+After successfully solving the maze, the system displays the discovered route directly on the maze using a special character. This allows the user to visually observe the path taken by the algorithm from the starting position to the destination.
+
+8. Maze Performance Analysis
+
+The system analyzes the generated maze and solving process by displaying information such as the number of cells explored, path length, number of movements, and whether the maze was successfully solved. This allows the user to compare the efficiency of different generated mazes and solving attempts.
